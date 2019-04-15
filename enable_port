@@ -1,0 +1,4 @@
+sudo lsof -i -P -n //사용중인 포트 확인
+sudo rm /etc/nginx/sites-enabled/dropbox_nginx.conf //dropbox_conf설정파일 삭제
+sudo /etc/init.d/niginx restart //nginx 재실행
+python3 manage.py runserver 0:8000
